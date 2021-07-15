@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <section class="bloco">
+        <div class="container">
+            <div class="calculator">
+                <div class="display">
+                    <p id="tela"></p>
+                </div>
+                <div class="botoes">
+                    <div class="linha">
+                        <span id="limpar" onclick="limpar_campos()">C</span>
+                        <span id='apagar' onclick="apagar()">⌫</span>
+                        <span class="elemento" id="porcentagem">%</span>
+                        <span class="elemento" id="dividir" onclick="dividir()">/</span>
+                    </div>
+
+                    <div class="linha">
+                        <span class="elemento">7</span>
+                        <span class="elemento">8</span>
+                        <span class="elemento">9</span>
+                        <span class="elemento" id="multiplicar" onclick="multiplicar()">*</span>
+                    </div>
+
+                    <div class="linha">
+                        <span class="elemento">4</span>
+                        <span class="elemento">5</span>
+                        <span class="elemento">6</span>
+                        <span class="elemento" id="subtrair" onclick="subtrair()">-</span>
+                    </div>
+
+                    <div class="linha">
+                        <span class="elemento">1</span>
+                        <span class="elemento">2</span>
+                        <span class="elemento">3</span>
+                        <span class="elemento" id="somar" onclick="somar()">+</span>
+                    </div>
+
+                    <div class="linha">
+                        <span class="elemento">0</span>
+                        <span class="elemento">00</span>
+                        <span class="elemento" id="ponto">.</span>
+                        <span id="igual" onclick="calcular()">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
